@@ -1,0 +1,2 @@
+# ShopKura
+Mobile Programming Assignment 
