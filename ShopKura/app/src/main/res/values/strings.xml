@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">ShopKura</string>
     <string name="title">ShopKura</string>
-    <string name="basket">장바구니</string>
-    <string name="buy">바로구매</string>
+    <string name="basket">장바구니 담기</string>
+    <string name="buy">바로 구매하기</string>
 
     <string name="Hydra">수국꽃다발</string>
     <string name="Hydra_price">16,000₩</string>
