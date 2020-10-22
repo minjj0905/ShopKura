@@ -13,6 +13,9 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final int main_to_basket = 1000;
+    public static final int main_to_buy = 1001;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                     basket_intent.putExtra("selectFlowers", selectFlower);
                 }
 
-                startActivity(basket_intent);
+                startActivityForResult(basket_intent, main_to_basket);
             }
         });
 
@@ -63,12 +66,28 @@ public class MainActivity extends AppCompatActivity {
                     boolean flowerSelectCheck = isFlowerSelected(checkBoxes_flower);
                     basket_intent.putExtra("isSelected", flowerSelectCheck);
                     basket_intent.putExtra("selectFlowers", selectFlower);
-                    startActivity(basket_intent);
+                    startActivityForResult(basket_intent, main_to_basket);
                 }
                 else{
 //                    장바구니 버튼을 눌렀을 때 선택된 체크박스가 없다면 Toast 출력
                     Toast toast = Toast.makeText(getApplicationContext(), "선택된 상품이 없습니다!",
                                                     Toast.LENGTH_SHORT);
+                    toast.show();
+                }
+            }
+        });
+
+//        하단 구매하기 버튼 클릭시
+        buy_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(isFlowerSelected(checkBoxes_flower)) {
+                    Intent buy_intent = new Intent(getApplicationContext(), BuyActivity.class);
+                    ArrayList<Integer> selectFlower = getSelectFlowerNumber(checkBoxes_flower);
+                    buy_intent.putExtra("selectFlowers", selectFlower);
+                    startActivityForResult(buy_intent, main_to_buy);
+                } else {
+                    Toast toast = Toast.makeText(getApplicationContext(), "선택된 상품이 없습니다!", Toast.LENGTH_SHORT);
                     toast.show();
                 }
             }

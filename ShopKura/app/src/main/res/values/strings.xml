@@ -26,4 +26,12 @@
     <string name="won">₩</string>
     <string name="empty_basket">장바구니에 상품이 없습니다.</string>
     <string name="buy_from_basket">구매하기</string>
+
+    <!--  buy activity  -->
+    <string name="buy_list">- 구매 목록</string>
+    <string name="customer">- 주문자 정보</string>
+    <string name="address">주소</string>
+    <string name="phone">연락처</string>
+    <string name="payment">결제하기</string>
+
 </resources>

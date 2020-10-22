@@ -51,12 +51,14 @@ public class BasketActivity extends AppCompatActivity {
         TextView select_cnt = (TextView)findViewById(R.id.select_cnt_text);
 //        총가격
         TextView total_price = (TextView)findViewById(R.id.total_price_text);
-
 //        total layout
         LinearLayout total_layout = (LinearLayout)findViewById(R.id.total_layout);
-
 //        가격 배열
         int[] price = {16000, 15000, 21000, 24000, 21000};
+
+
+//        하단 구매하기 버튼
+        Button buy = (Button)findViewById(R.id.buy);
 
         Intent main_intent = getIntent();
         boolean isSelected = main_intent.getExtras().getBoolean("isSelected");
@@ -71,6 +73,7 @@ public class BasketActivity extends AppCompatActivity {
                 flowerCheckBoxes[selectFlower.get(i)].setChecked(true);
                 sum += price[i];
             }
+
             select_cnt.setText(""+selectFlower.size());
             total_price.setText(""+sum);
 
@@ -87,6 +90,33 @@ public class BasketActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
+//        체크박스 클릭시 수량, 가격 변하게
+
+        View.OnClickListener checkboxCheck = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int sum = 0;
+                int cnt = 0;
+                for(int i=0; i<5; i++) {
+                    if(flowerCheckBoxes[i].isChecked()) {
+                        cnt++;
+                        sum += price[i];
+                    }
+                }
+                select_cnt.setText(""+cnt);
+                total_price.setText(""+sum);
+            }
+        };
+
+        checkBox_one.setOnClickListener(checkboxCheck);
+        checkBox_two.setOnClickListener(checkboxCheck);
+        checkBox_three.setOnClickListener(checkboxCheck);
+        checkBox_four.setOnClickListener(checkboxCheck);
+        checkBox_five.setOnClickListener(checkboxCheck);
+
+
 
 
     }
