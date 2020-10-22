@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ShopKura</string>
+    <string name="title">ShopKura</string>
+    <string name="basket">장바구니</string>
+    <string name="buy">바로구매</string>
+
+    <string name="Hydra">수국꽃다발</string>
+    <string name="Hydra_price">16,000₩</string>
+
+    <string name="fog">안개꽃다발</string>
+    <string name="fog_price">15,000₩</string>
+
+    <string name="rose">장미꽃다발</string>
+    <string name="rose_price">21,000₩</string>
+
+    <string name="set">종합꽃다발</string>
+    <string name="set_price">24,000₩</string>
+
+    <string name="pink">핑크꽃다발</string>
+    <string name="pink_price">21,000₩</string>
+
+<!--  basket activity  -->
+    <string name="bascket_title">- 장바구니 목록</string>
+    <string name="select_cnt">개 상품</string>
+    <string name="total_price">총 금액</string>
+    <string name="won">₩</string>
+    <string name="empty_basket">장바구니에 상품이 없습니다.</string>
+    <string name="buy_from_basket">구매하기</string>
+</resources>
