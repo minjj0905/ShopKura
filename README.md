@@ -1,5 +1,4 @@
 <h1 align="center"> #Kura🌸</h1>
-[![HitCount](http://hits.dwyl.com/minjj0905/ShopKura.svg)](http://hits.dwyl.com/minjj0905/ShopKura)
 <div>
     <img src="https://img.shields.io/github/issues/minjj0905/ShopKura">
     <img src="https://img.shields.io/github/forks/minjj0905/ShopKura">
@@ -54,6 +53,13 @@
 
 ## :cherry_blossom: 구현 내용
 
-#### 상품선택 화면
-<br>
+### 상품선택 화면
+
+#### 처음 앱을 실행했을 때
 <img src="images/01_1.png" width="400">
+<br>
+<br> 
+
+
+#### 아무것도 선택하지 않고 "장바구니 담기", "바로 구매하기" 버튼 클릭 시
+<img src="images/01_2.png" width="400">
