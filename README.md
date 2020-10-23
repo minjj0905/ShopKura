@@ -1,17 +1,15 @@
 <h1 align="center"> #Kura🌸</h1>
-<div>
-    <img src="https://img.shields.io/github/issues/minjj0905/ShopKura">
-    <img src="https://img.shields.io/github/forks/minjj0905/ShopKura">
-    <img src="https://img.shields.io/github/stars/minjj0905/ShopKura">
-</div>
 
+[![HitCount](http://hits.dwyl.com/minjj0905/minjj0905/ShopKura.svg)](http://hits.dwyl.com/minjj0905/minjj0905/ShopKura)
+<img src="https://img.shields.io/github/issues/minjj0905/ShopKura">
+<img src="https://img.shields.io/github/forks/minjj0905/ShopKura">
+<img src="https://img.shields.io/github/stars/minjj0905/ShopKura">
 
 #Kura = Shop Kura = Shop + Sakura
 > 국민대학교 2020-2 모바일프로그래밍 과제입니다.
 
 <br>
 <br>
-
 
 ## :cherry_blossom: 과제 내용
 
