@@ -1,4 +1,4 @@
-<h1 align="center"> #Kura🌸</h1>
+<h1 align="center"> #Kura </h1>
 #### #Kura = Shop Kura = Shop + Sakura
 > 국민대학교 2020-2 모바일프로그래밍 과제입니다.
 > 
@@ -6,21 +6,39 @@
 
 
 
-## :cherry_blossom: 구현 내용
+## 구현 내용
 
 ### 1. 상품선택 페이지
 
 ##### 처음 앱을 실행했을 때
+
+<div>
 <img src="images/01_1.png" width="300">
+</div>
+
+
 
 ##### 우측 상단 장바구니 버튼 클릭시 장바구니로 이동
+
+<div>
 <img src="images/02_1.png" width="300">
+</div>
+
+
 
 ##### 상품을 선택하지 않고 장바구니 담기, 바로 구매하기 버튼 클릭 시 메세지 출력
+
+<div>
 <img src="images/01_2.png" width="300">
+</div>
+
+
 
 ##### 상품 여러개 선택 가능
+
+<div>
 <img src="images/01_3.png" width="300">
+</div>
 
 
 
@@ -28,12 +46,22 @@
 ### 2. 장바구니 페이지
 
 ##### 아무것도 선택하지 않고 상단 버튼을 이용해 장바구니에 진입 시 빈 장바구니 출력
+<div>
 <img src="images/02_1.png" width="300">
+</div>
+
+
 
 ##### 상품 선택 후 장바구니 버튼을 클릭하면 장바구니에 담기게 됨
+
+<div>
 <img src="images/02_2.png" width="300">
+</div>
+
+
 
 ##### 상품 선택 해제 할 시 선택 수량, 총 금액 변동
+
 <div>
     <img src="images/02_3.png" width="300">
     &nbsp;
@@ -41,34 +69,67 @@
 </div>
 
 
+
 ##### 상품을 선택하지 않고 구매하기 버튼 클릭시 메세지 출력
+
+<div>
 <img src="images/02_5.png" width="300">
+</div>
+
+
 
 ##### 우측상단 홈버튼 클릭 시 다시 상품선택 페이지로 돌아감
+
+<div>
 <img src="images/02_6.png" width="300">
+</div>
+
+
+
 
 ### 3. 구매 페이지
 
 ##### 상품 선택 후 구매페이지 진입 시
+<div>
 <img src="images/03_1.png" width="300">
+</div>
+
+
 
 ##### 주문자 정보를 입력하지 않고 결제하기 버튼 클릭 시
+
+<div>
 <img src="images/03_2.png" width="300">
+</div>
+
+
 
 ##### 주문자 정보 작성 후 결제하기 버튼 클릭 가능
+
+<div>
 <img src="images/03_3.png" width="300">
+</div>
+
+
 
 ### 4. 구매완료 페이지
 
 ##### 주문자 정보가 있을 때 결제하기 클릭 시 구매완료 페이지 출력
+<div>
 <img src="images/04_1.png" width="300">
+</div>
+
+
 
 ##### 홈으로 이동 버튼이나 뒤로가기 클릭 시 새 상품선택 페이지로 이동
+
+<div>
 <img src="images/05_1.png" width="300">
+</div>
 
 
 
-## :cherry_blossom: 과제 소감
+## 과제 소감
 
 > 처음에 앱 개발을 시작했을 때에는 매우 막막했다. 학교 수업을 들으며 어찌저찌 따라가고는 있었으나, 앱 개발이 처음이고 배운 내용만으로 내가 만들고 싶은 앱을 구현하기에는 무리가 있어 많은 공부가 필요했다.
 >
