@@ -2,6 +2,7 @@ package com.example.shopkura;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.app.ActivityCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -56,14 +57,21 @@ public class BuyActivity extends AppCompatActivity {
             }
         }
         select_cnt.setText(""+selectFlower.size());
-        total_price.setText(""+sum);
+        if(sum == 0) {
+            total_price.setText("0");
+        } else {
+            total_price.setText("" + sum / 1000 + "," + "000");
+        }
 
         pay_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if((address.getText().toString().length() != 0) && (phone.getText().toString().length() != 0)) {
                     Intent after_intent = new Intent(getApplicationContext(), AfterBuyActivity.class);
+                    after_intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(after_intent);
+                    finish();
+
                 } else {
                     Toast toast = Toast.makeText(getApplicationContext(), "주문자 정보를 모두 작성해주세요.", Toast.LENGTH_SHORT);
                     toast.show();

@@ -75,7 +75,11 @@ public class BasketActivity extends AppCompatActivity {
             }
 
             select_cnt.setText(""+selectFlower.size());
-            total_price.setText(""+sum);
+            if(sum == 0) {
+                total_price.setText("0");
+            } else {
+                total_price.setText("" + sum / 1000 + "," + "000");
+            }
 
         } else {
             emptyText.setVisibility(View.VISIBLE);
@@ -106,7 +110,11 @@ public class BasketActivity extends AppCompatActivity {
                     }
                 }
                 select_cnt.setText(""+cnt);
-                total_price.setText(""+sum);
+                if(sum == 0) {
+                    total_price.setText("0");
+                } else {
+                    total_price.setText("" + sum / 1000 + "," + "000");
+                }
             }
         };
 

@@ -20,7 +20,9 @@ public class AfterBuyActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent main = new Intent(getApplicationContext(), MainActivity.class);
+                main.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(main);
+                finish();
             }
         });
 
@@ -29,7 +31,9 @@ public class AfterBuyActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Intent main = new Intent(getApplicationContext(), MainActivity.class);
+        main.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(main);
+        finish();
     }
 
 }
