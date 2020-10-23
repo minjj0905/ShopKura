@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent buy_intent = new Intent(getApplicationContext(), BuyActivity.class);
                     ArrayList<Integer> selectFlower = getSelectFlowerNumber(checkBoxes_flower);
                     buy_intent.putExtra("selectFlowers", selectFlower);
-                    startActivityForResult(buy_intent, main_to_buy);
+                    startActivity(buy_intent);
                 } else {
                     Toast toast = Toast.makeText(getApplicationContext(), "선택된 상품이 없습니다!", Toast.LENGTH_SHORT);
                     toast.show();

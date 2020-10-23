@@ -34,4 +34,8 @@
     <string name="phone">연락처</string>
     <string name="payment">결제하기</string>
 
+    <!--  After Buy  -->
+    <string name="after_buy">구매 완료되었습니다.</string>
+    <string name="to_home">홈으로 이동</string>
+
 </resources>

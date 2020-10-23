@@ -117,7 +117,42 @@ public class BasketActivity extends AppCompatActivity {
         checkBox_five.setOnClickListener(checkboxCheck);
 
 
+//        구매버튼 클릭시
+        buy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(isFlowerSelected(flowerCheckBoxes)) {
+                    Intent buy_intent = new Intent(getApplicationContext(), BuyActivity.class);
+                    ArrayList<Integer> selectFlower = getSelectFlowerNumber(flowerCheckBoxes);
+                    buy_intent.putExtra("selectFlowers", selectFlower);
+                    startActivity(buy_intent);
+                } else {
+                    Toast toast = Toast.makeText(getApplicationContext(), "선택한 상품이 없습니다!", Toast.LENGTH_SHORT);
+                    toast.show();
+                }
+            }
+        });
 
+    }
 
+    //꽃이 선택되었는지 확인하는 함수
+    public boolean isFlowerSelected(CheckBox[] checkBoxes) {
+        for(int i=0; i<checkBoxes.length; i++) {
+            if(checkBoxes[i].isChecked()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //    선택된 꽃의 번호를 반환하는 함수
+    public ArrayList<Integer> getSelectFlowerNumber(CheckBox[] checkBoxes) {
+        ArrayList<Integer> selectFlowerNumber = new ArrayList<>();
+        for(int i=0; i<checkBoxes.length; i++) {
+            if(checkBoxes[i].isChecked()) {
+                selectFlowerNumber.add(i);
+            }
+        }
+        return selectFlowerNumber;
     }
 }
