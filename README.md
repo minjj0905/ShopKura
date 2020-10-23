@@ -5,8 +5,11 @@
     <img src="https://img.shields.io/github/stars/minjj0905/ShopKura">
 </div>
 
-Shop Kura = Shop + Sakura
+#Kura = Shop Kura = Shop + Sakura
 > 국민대학교 2020-2 모바일프로그래밍 과제입니다.
+
+<br>
+<br>
 
 
 ## :cherry_blossom: 과제 내용
@@ -44,7 +47,8 @@ Shop Kura = Shop + Sakura
 >   ListView, GridView, AdapterView, ToolBar, Text View, CheckBox, Switch, 
 >   ToggleButton, RadioButton, ImageView, ImageButton 등
 
-
+<br>
+<br>
 
 ## :cherry_blossom: 구현 내용
 
